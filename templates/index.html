@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portafolio profesional de desarrolladora Fullstack. Proyectos, habilidades y contacto." />
+  <meta name="keywords" content="desarrolladora fullstack, portafolio, desarrollo web, programadora" />
+  <meta name="author" content="Tu Nombre" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mi Portafolio - Desarrolladora Fullstack" />
+  <meta property="og:description" content="Portafolio profesional de desarrolladora Fullstack." />
+  <meta property="og:url" content="" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mi Portafolio - Desarrolladora Fullstack" />
+  <meta name="twitter:description" content="Portafolio profesional de desarrolladora Fullstack." />
+
+  <title>Mi Portafolio - Desarrolladora Fullstack</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+            },
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.8s ease forwards',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <!-- Navegación principal -->
+  </header>
+
+  <main>
+
+    <!-- ===== HERO / INICIO ===== -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden
+               bg-gradient-to-br from-gray-950 via-slate-900 to-indigo-950">
+      <!-- Círculos decorativos de fondo -->
+      <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full
+                    bg-brand-500/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full
+                    bg-accent-500/10 blur-3xl pointer-events-none"></div>
+
+      <!-- Contenido centrado -->
+      <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+
+        <!-- Etiqueta pequeña -->
+        <p class="inline-block mb-6 px-4 py-1 rounded-full text-xs font-semibold tracking-widest uppercase
+                     bg-brand-500/20 text-brand-400 border border-brand-500/30
+                     animate-fade-up" style="animation-delay: 0s;">
+          Bienvenida a mi portafolio
+        </p>
+
+        <!-- Título principal -->
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight text-white
+                   animate-fade-up opacity-0" style="animation-delay: 0.15s;">
+          Hola, soy
+          <span class="bg-gradient-to-r from-brand-400 to-accent-400
+                         bg-clip-text text-transparent">
+            Melina</span>,
+          <br />
+          <span class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-200">
+            Desarrolladora Fullstack
+          </span>
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="mt-6 text-lg sm:text-xl text-slate-400 leading-relaxed max-w-xl mx-auto
+                   animate-fade-up opacity-0" style="animation-delay: 0.3s;">
+          Me enfoco en crear soluciones <span class="text-slate-200 font-semibold">eficientes y
+            escalables</span>,
+          combinando diseño cuidadoso con código robusto para llevar ideas al siguiente nivel.
+        </p>
+
+        <!-- Botones CTA -->
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center
+                   animate-fade-up opacity-0" style="animation-delay: 0.45s;">
+          <!-- Botón primario -->
+          <a href="#proyectos" id="btn-ver-proyectos" class="group relative inline-flex items-center justify-center gap-2
+                     px-8 py-3.5 rounded-xl font-semibold text-white
+                     bg-gradient-to-r from-brand-500 to-accent-500
+                     shadow-lg shadow-brand-500/30
+                     hover:shadow-brand-500/50 hover:scale-105
+                     transition-all duration-300">
+            <svg class="w-5 h-5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+            Ver Proyectos
+          </a>
+
+          <!-- Botón secundario (outline) -->
+          <a href="#contacto" id="btn-contactame" class="inline-flex items-center justify-center gap-2
+                     px-8 py-3.5 rounded-xl font-semibold text-slate-200
+                     border border-slate-600 bg-slate-800/50 backdrop-blur-sm
+                     hover:border-brand-400 hover:text-brand-400 hover:bg-slate-800
+                     transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0
+                         002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Contáctame
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1
+                    text-slate-500 text-xs animate-bounce">
+        <span>Scroll</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / SOBRE MÍ ===== -->
+    <section id="sobre-mi">
+      <!-- Información personal y profesional -->
+    </section>
+
+    <!-- ===== PROJECTS / PROYECTOS ===== -->
+    <section id="proyectos"
+      class="relative py-28 px-6 bg-gradient-to-b from-slate-950 via-indigo-950/30 to-slate-950 overflow-hidden">
+      <!-- Línea superior decorativa -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-px
+                    bg-gradient-to-r from-transparent via-brand-500/40 to-transparent"></div>
+
+      <!-- Orbs de fondo -->
+      <div class="absolute top-20 right-0 w-80 h-80 rounded-full
+                    bg-brand-500/5 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-20 left-0 w-80 h-80 rounded-full
+                    bg-accent-500/5 blur-3xl pointer-events-none"></div>
+
+      <!-- Encabezado de sección -->
+      <div class="max-w-5xl mx-auto text-center mb-16">
+        <p class="inline-block mb-4 px-4 py-1 rounded-full text-xs font-semibold
+                     tracking-widest uppercase bg-accent-500/10 text-accent-400
+                     border border-accent-500/20">
+          Trabajo real en producción
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-black text-white leading-tight">
+          Proyectos
+          <span class="bg-gradient-to-r from-brand-400 to-accent-400
+                         bg-clip-text text-transparent">
+
+          </span>
+        </h2>
+        <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          Soluciones de infraestructura y backend diseñadas para entornos empresariales reales,
+          priorizando rendimiento, escalabilidad y seguridad de los datos.
+        </p>
+      </div>
+
+      <!-- Grid de proyectos -->
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {% for proyecto in proyectos %}
+        {% set outer_loop_index = loop.index %}
+        <!-- ── TARJETA: {{ proyecto.display_name }} ── -->
+        <article id="proyecto-{{ loop.index }}" class="group relative flex flex-col rounded-2xl border border-slate-800
+                   bg-slate-900/40 backdrop-blur-sm p-8
+                   hover:border-brand-500/60 hover:bg-slate-900/70
+                   hover:scale-[1.025] hover:shadow-2xl hover:shadow-brand-500/10
+                   transition-all duration-300 cursor-default">
+          <!-- Número decorativo -->
+          <span class="absolute top-5 right-6 text-8xl font-black
+                         text-slate-800/60 group-hover:text-brand-500/10
+                         transition-colors select-none leading-none">0{{ loop.index }}</span>
+
+          <!-- Ícono dinámico según índice (alternar colores/iconos de la paleta) -->
+          {% if loop.index % 2 == 1 %}
+          <div class="mb-6 inline-flex w-14 h-14 rounded-xl items-center justify-center
+                      bg-brand-500/10 border border-brand-500/25 text-brand-400
+                      group-hover:bg-brand-500/20 transition-colors">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582
+                         4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4
+                         M12 11v6M8 13v4M16 13v4" />
+            </svg>
+          </div>
+          {% else %}
+          <div class="mb-6 inline-flex w-14 h-14 rounded-xl items-center justify-center
+                      bg-accent-500/10 border border-accent-500/25 text-accent-400
+                      group-hover:bg-accent-500/20 transition-colors">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11
+                         11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+          </div>
+          {% endif %}
+
+          <!-- Título -->
+          <h3 class="relative z-10 text-xl font-bold text-white mb-3 leading-snug">
+            {{ proyecto.display_name }}
+          </h3>
+
+          <!-- Descripción -->
+          <p class="relative z-10 text-slate-400 text-sm leading-relaxed flex-1">
+            {{ proyecto.description }}
+          </p>
+
+          <!-- Badges -->
+          <div class="relative z-10 flex flex-wrap gap-2 mt-6">
+            {% for badge in proyecto.badges %}
+            <span class="px-3 py-1 rounded-full text-xs font-semibold
+                         {% if outer_loop_index % 2 == 1 %}
+                         bg-brand-500/10 text-brand-400 border border-brand-500/20
+                         {% else %}
+                         bg-accent-500/10 text-accent-400 border border-accent-500/20
+                         {% endif %}">
+              {{ badge }}
+            </span>
+            {% endfor %}
+          </div>
+
+          <!-- Botón -->
+          <button onclick="openArqModal('{{ proyecto.folder_name }}')" id="btn-arquitectura-{{ proyecto.folder_name }}"
+            class="relative z-10 mt-8 inline-flex items-center gap-2 self-start
+                     px-5 py-2.5 rounded-xl text-sm font-semibold text-white cursor-pointer
+                     {% if loop.index % 2 == 1 %}
+                     bg-gradient-to-r from-brand-600 to-brand-500
+                     hover:from-brand-500 hover:to-accent-500
+                     shadow-md shadow-brand-500/20 hover:shadow-brand-500/40
+                     {% else %}
+                     bg-gradient-to-r from-accent-500 to-brand-500
+                     hover:from-accent-400 hover:to-brand-400
+                     shadow-md shadow-accent-500/20 hover:shadow-accent-500/40
+                     {% endif %}
+                     transition-all duration-300">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            Ver Arquitectura Técnica
+          </button>
+        </article>
+        {% endfor %}
+
+      </div><!-- /grid -->
+
+      <!-- Línea inferior decorativa -->
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-px
+                    bg-gradient-to-r from-transparent via-slate-700/40 to-transparent"></div>
+    </section>
+
+    <!-- ===== SKILLS / HABILIDADES ===== -->
+    <section id="habilidades"
+      class="relative py-28 px-6 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-gray-950 overflow-hidden">
+      <!-- Decoración de fondo -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full
+                    bg-brand-500/5 blur-[120px] pointer-events-none"></div>
+
+      <!-- Contenedor principal -->
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Encabezado de sección -->
+        <div class="text-center mb-16">
+          <p class="inline-block mb-4 px-4 py-1 rounded-full text-xs font-semibold
+                       tracking-widest uppercase bg-brand-500/10 text-brand-400
+                       border border-brand-500/20">
+            Mi Stack y Herramientas
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-black text-white leading-tight">
+            Stack
+            <span class="bg-gradient-to-r from-brand-400 to-accent-400
+                           bg-clip-text text-transparent">
+              Tecnológico
+            </span>
+          </h2>
+          <p class="mt-4 text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
+            Especialización técnica enfocada en desarrollo, automatización e integración eficiente de sistemas.
+          </p>
+        </div>
+
+        <!-- Grid de Categorías -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Categoria 1: Desarrollo Backend -->
+          <div class="group relative flex flex-col rounded-2xl border border-slate-800/80
+                     bg-slate-900/40 backdrop-blur-sm p-6
+                     hover:border-brand-500/50 hover:bg-slate-900/60
+                     hover:shadow-lg hover:shadow-brand-500/5
+                     transition-all duration-300">
+            <!-- Cabecera de tarjeta -->
+            <div class="flex items-center gap-4 mb-6">
+              <div class="inline-flex w-10 h-10 rounded-lg items-center justify-center
+                            bg-brand-500/10 border border-brand-500/20 text-brand-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-white">Desarrollo Backend</h3>
+            </div>
+
+            <!-- Tags / Habilidades -->
+            <div class="flex flex-col gap-4">
+              <!-- Skill 1 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">Python</span>
+                  <span class="text-brand-400 font-semibold">Avanzado</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full transition-all duration-500"
+                    style="width: 90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">Flask</span>
+                  <span class="text-brand-400 font-semibold">Intermedio-Alto</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full transition-all duration-500"
+                    style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">Arquitectura de Software</span>
+                  <span class="text-brand-400 font-semibold">Diseño Sólido</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full transition-all duration-500"
+                    style="width: 80%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">REST APIs</span>
+                  <span class="text-brand-400 font-semibold">Integración</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full transition-all duration-500"
+                    style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria 2: Datos & Almacenamiento -->
+          <div class="group relative flex flex-col rounded-2xl border border-slate-800/80
+                     bg-slate-900/40 backdrop-blur-sm p-6
+                     hover:border-accent-500/50 hover:bg-slate-900/60
+                     hover:shadow-lg hover:shadow-accent-500/5
+                     transition-all duration-300">
+            <!-- Cabecera de tarjeta -->
+            <div class="flex items-center gap-4 mb-6">
+              <div class="inline-flex w-10 h-10 rounded-lg items-center justify-center
+                            bg-accent-500/10 border border-accent-500/20 text-accent-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-white">Datos &amp; Almacenamiento</h3>
+            </div>
+
+            <!-- Tags / Habilidades -->
+            <div class="flex flex-col gap-4">
+              <!-- Skill 1 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">SQL Server</span>
+                  <span class="text-accent-400 font-semibold">Avanzado</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-accent-500 to-brand-500 h-full rounded-full transition-all duration-500"
+                    style="width: 90%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">Modelado de Datos</span>
+                  <span class="text-accent-400 font-semibold">Relacional</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-accent-500 to-brand-500 h-full rounded-full transition-all duration-500"
+                    style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">Optimización de Consultas</span>
+                  <span class="text-accent-400 font-semibold">Performance</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-accent-500 to-brand-500 h-full rounded-full transition-all duration-500"
+                    style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria 3: Automatización & Herramientas -->
+          <div class="group relative flex flex-col rounded-2xl border border-slate-800/80
+                     bg-slate-900/40 backdrop-blur-sm p-6
+                     hover:border-brand-500/50 hover:bg-slate-900/60
+                     hover:shadow-lg hover:shadow-brand-500/5
+                     transition-all duration-300">
+            <!-- Cabecera de tarjeta -->
+            <div class="flex items-center gap-4 mb-6">
+              <div class="inline-flex w-10 h-10 rounded-lg items-center justify-center
+                            bg-brand-500/10 border border-brand-500/20 text-brand-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-white">Automatización &amp; Entornos</h3>
+            </div>
+
+            <!-- Tags en lote compactos y flotantes -->
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Scripts Automatizados
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Diseño de Interfaces (UI)
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Git / GitHub
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Entornos de Prueba (Staging)
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Servidores Locales (Waitress)
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-brand-400 hover:text-white transition-colors duration-200 cursor-default">
+                Programador de Tareas
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold
+                             bg-slate-800 text-slate-300 border border-slate-700/80
+                             hover:border-accent-400 hover:text-white transition-colors duration-200 cursor-default">
+                Docker (Básico)
+              </span>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+
+      </div><!-- /container -->
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER / CONTACTO ===== -->
+  <footer id="contacto"
+    class="relative py-24 px-6 bg-gradient-to-b from-gray-950 via-slate-950 to-indigo-950 text-slate-300">
+    <!-- Línea divisoria superior -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-px
+                  bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
+
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+      <!-- Columna 1: Información y Redes -->
+      <div class="space-y-6">
+        <p class="inline-block px-4 py-1 rounded-full text-xs font-semibold
+                     tracking-widest uppercase bg-brand-500/10 text-brand-400
+                     border border-brand-500/20">
+          ¿Hablamos?
+        </p>
+        <h2 class="text-4xl font-black text-white">
+          Ponte en
+          <span class="bg-gradient-to-r from-brand-400 to-accent-400
+                         bg-clip-text text-transparent">
+            Contacto
+          </span>
+        </h2>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+          Si buscas una desarrolladora enfocada en la robustez lógica, optimización de consultas en SQL Server y
+          automatización en Python, envíame un mensaje.
+        </p>
+
+        <div class="space-y-4 pt-4">
+          <!-- Email -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-brand-500/10 text-brand-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <span class="text-sm text-slate-300 font-medium">mmmarin884@gmail.com</span>
+          </div>
+
+          <!-- Ubicación -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-accent-500/10 text-accent-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <span class="text-sm text-slate-300 font-medium">Medellín, Colombia</span>
+          </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="flex gap-4 pt-6">
+          <a href="https://github.com/Melina3m" target="_blank" rel="noopener noreferrer" title="Ver GitHub"
+            class="w-10 h-10 rounded-lg border border-slate-800 bg-slate-900/60 flex items-center justify-center text-slate-400 hover:text-white hover:border-brand-500 transition-colors group">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.0.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Formulario -->
+      <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-8 backdrop-blur-sm">
+        <form id="form-contacto" class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-slate-400 mb-2">Nombre Completo</label>
+            <input type="text" id="input-nombre" name="nombre" required
+              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
+              placeholder="Tu nombre..." />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-400 mb-2">Correo Electrónico</label>
+            <input type="email" id="input-email" name="email" required
+              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
+              placeholder="tu@correo.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-400 mb-2">Mensaje</label>
+            <textarea id="input-mensaje" name="mensaje" rows="4" required
+              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors resize-none"
+              placeholder="¿En qué proyecto o automatización estás pensando?"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-brand-500 to-indigo-600 hover:from-brand-600 hover:to-indigo-700 text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-brand-500/20">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-16 text-center text-xs text-slate-600">
+      &copy; 2026 Desarrolladora Fullstack. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Script de Interactividad API -->
+  <script>
+    // Capturamos el evento del formulario para procesarlo con el servidor Python
+    document.getElementById('form-contacto')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = {
+        nombre: document.getElementById('input-nombre').value,
+        email: document.getElementById('input-email').value,
+        mensaje: document.getElementById('input-mensaje').value
+      };
+
+      try {
+        // Petición asíncrona al backend de Flask
+        const response = await fetch('/api/contacto', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const resultado = await response.json();
+        if (resultado.status === 'success') {
+          alert('¡Brillante! El backend en Python procesó tu mensaje correctamente.');
+          // Limpiar formulario
+          document.getElementById('form-contacto').reset();
+        } else {
+          alert('Error: ' + resultado.message);
+        }
+      } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        alert('Hubo un problema de conexión con el servidor Flask.');
+      }
+    });
+  </script>
+
+  <!-- ===== MODAL: Arquitectura Técnica ===== -->
+  <div id="modal-arquitectura" class="fixed inset-0 z-[9999] flex items-center justify-center p-4
+              opacity-0 pointer-events-none transition-opacity duration-300"
+    onclick="if(event.target===this) closeArqModal()">
+
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-md"></div>
+
+    <!-- Contenedor del modal -->
+    <div id="modal-content" class="relative w-full max-w-3xl max-h-[85vh] overflow-y-auto
+                rounded-2xl border border-slate-700/60
+                bg-slate-900/95 backdrop-blur-xl
+                shadow-2xl shadow-brand-500/10
+                transform scale-95 transition-transform duration-300
+                scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
+
+      <!-- Header del modal -->
+      <div class="sticky top-0 z-10 flex items-center justify-between px-8 py-5
+                  bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/40">
+        <div>
+          <p class="text-xs font-semibold tracking-widest uppercase text-brand-400 mb-1">Arquitectura Técnica</p>
+          <h3 id="modal-title" class="text-xl font-bold text-white"></h3>
+        </div>
+        <button onclick="closeArqModal()" class="w-10 h-10 rounded-xl flex items-center justify-center
+                       bg-slate-800/60 border border-slate-700/40 text-slate-400
+                       hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30
+                       transition-all duration-200 cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Body del modal (se inyecta dinámicamente) -->
+      <div id="modal-body" class="px-8 py-6 space-y-6"></div>
+
+    </div>
+  </div>
+
+  <script>
+    // ===================================================
+    // 1. CONTROL DEL FORMULARIO DE CONTACTO (Flask Backend)
+    // ===================================================
+    document.getElementById('form-contacto')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Capturamos los valores usando los IDs corregidos
+      const formData = {
+        nombre: document.getElementById('input-nombre').value,
+        email: document.getElementById('input-email').value,
+        mensaje: document.getElementById('input-mensaje').value
+      };
+
+      try {
+        // Petición POST asíncrona a la ruta de Flask en tu app.py
+        const response = await fetch('/contacto', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const resultado = await response.json();
+
+        if (resultado.status === 'success') {
+          alert('¡Brillante! El backend en Python procesó tu mensaje correctamente.');
+          // Limpia los campos del formulario automáticamente
+          document.getElementById('form-contacto').reset();
+        } else {
+          alert('Error en el servidor: ' + resultado.message);
+        }
+      } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        alert('Hubo un problema de conexión con el servidor Flask. Asegúrate de que app.py se esté ejecutando.');
+      }
+    });
+
+
+    // ===================================================
+    // 2. DATOS DE ARQUITECTURA TÉCNICA POR PROYECTO
+    // ===================================================
+    const arquitecturas = {
+      // Las claves coinciden exactamente con el folder_name que envía el backend en minúsculas/mayúsculas
+      "buscarean": {
+        title: "Servicio de Extracción y Consulta de EAN/SKU",
+        steps: [
+          {
+            title: "1. Conexión de Datos",
+            desc: "Conexión directa a <strong>SQL Server (Siesa UnoEE)</strong> mediante SQLAlchemy. Ejecuta el procedimiento almacenado <code>sp_items_consulta_generica_ext</code> para extraer el catálogo completo de ítems activos del inventario.",
+            tags: ["SQLAlchemy", "pyodbc", "Stored Procedure"]
+          },
+          {
+            title: "2. Lógica del Servidor",
+            desc: "El módulo <code>buscar.py</code> procesa el DataFrame con Pandas: concatena campos de referencia y extensiones para construir el <strong>SKU compuesto</strong>, filtra los códigos de barra principales y elimina duplicados y nulos.",
+            tags: ["Pandas", "DataFrame", "ETL"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Genera un archivo <strong>Excel (.xlsx)</strong> con las columnas SKU, Código de Barras y Descripción. El usuario lo descarga con un solo clic desde la interfaz Bootstrap servida por Flask.",
+            tags: ["Flask", "Bootstrap", "Excel Export"]
+          }
+        ]
+      },
+
+      "conciliacionbancaria": {
+        title: "Conciliación Bancaria Automatizada",
+        steps: [
+          {
+            title: "1. Origen de Datos",
+            desc: "Recibe <strong>archivos CSV</strong> de extractos bancarios (efectivo y tarjetas) cargados por el usuario. Paralelamente consulta movimientos contables en <strong>SQL Server (Siesa)</strong> mediante el SP <code>sp_co_resumen_movto_contable</code>.",
+            tags: ["CSV Upload", "SQL Server", "Stored Procedure"]
+          },
+          {
+            title: "2. Lógica del Servidor",
+            desc: "Implementa un <strong>algoritmo combinatorio</strong> (<code>itertools.combinations</code>) que busca subconjuntos de transacciones bancarias cuya suma coincida con los registros de Siesa. Optimizado con límite de tamaño para evitar explosión computacional.",
+            tags: ["Combinatoria", "Pandas", "itertools", "Algoritmo"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Genera un libro Excel con dos hojas: <strong>Documento Contable</strong> y <strong>Movimiento Contable</strong>, formateados con openpyxl para importación directa en Siesa. Además genera un reporte de <strong>inconsistencias</strong> no conciliadas.",
+            tags: ["openpyxl", "xlsxwriter", "Archivos Planos Contables"]
+          }
+        ]
+      },
+
+      "contabilidad": {
+        title: "Comparador de Cortes Contables",
+        steps: [
+          {
+            title: "1. Origen de Datos",
+            desc: "Se conecta a <strong>SQL Server (Siesa ERP)</strong> y ejecuta el SP <code>sp_co_resumen_movto_contable</code> para dos rangos de periodos contables (Corte A y Corte B) definidos por el usuario en la interfaz.",
+            tags: ["SQLAlchemy", "SQL Server", "Periodos Contables"]
+          },
+          {
+            title: "2. Lógica del Servidor",
+            desc: "Agrupa los movimientos por <strong>Cuenta Auxiliar + Tercero</strong>, calcula el neto (Débito − Crédito) de cada corte, y realiza un <code>OUTER MERGE</code> para alinearlos. Calcula <strong>diferencias absolutas y variación porcentual</strong> filtrando cuentas de resultado (4, 5, 6, 7).",
+            tags: ["Pandas", "Numpy", "Merge", "Análisis Financiero"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Renderiza el comparativo interactivo en un <strong>dashboard Streamlit</strong> con tabla dinámica y botón de descarga del reporte <code>.xlsx</code> generado en memoria con openpyxl.",
+            tags: ["Streamlit", "Dashboard", "Excel en Memoria"]
+          }
+        ]
+      },
+
+      "controlg": {
+        title: "Gestor de Gastos y Finanzas Personales",
+        steps: [
+          {
+            title: "1. Interfaces Duales",
+            desc: "<strong>Versión Desktop</strong> con Tkinter y persistencia en JSON local. <strong>Versión Web</strong> con Flask, autenticación de usuarios, y base de datos PostgreSQL en la nube con migraciones automáticas de esquema.",
+            tags: ["Flask", "Tkinter", "PostgreSQL", "psycopg2"]
+          },
+          {
+            title: "2. Lógica de Negocio",
+            desc: "Control presupuestal por <strong>quincenas (Q1/Q2)</strong> con categorización de gastos, seguimiento de deudas insolutas, alertas de vencimiento a 3 días, y filtrado mensual de transacciones por usuario autenticado.",
+            tags: ["Autenticación", "Sesiones", "CRUD", "Alertas"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Dashboard con métricas de saldo disponible, total de ingresos vs gastos, alerta visual cuando el gasto supera el <strong>80% de los ingresos</strong>, y panel de control de deuda restante.",
+            tags: ["Dashboard", "KPIs", "Multi-usuario"]
+          }
+        ]
+      },
+
+      "interfazgconocimiento": {
+        title: "Procesador de Indicadores UPT/TKT",
+        steps: [
+          {
+            title: "1. Origen de Datos",
+            desc: "Conecta al Data Warehouse <strong>SQL Server (reportes)</strong> y extrae hechos de ventas cruzando tablas dimensionales: <code>FactVentas</code>, <code>DimAlmacenes</code>, <code>DimProductos</code>, <code>DimTiempo</code> y <code>DimVendedorOriginal</code>. Filtra por año, mes y excluye devoluciones inter-canal.",
+            tags: ["Data Warehouse", "SQL Server", "Star Schema"]
+          },
+          {
+            title: "2. Pipeline ETL",
+            desc: "Procesa con <code>pivot_table</code> de Pandas para calcular <strong>UPT</strong> (Unidades/Factura), <strong>TKT</strong> (Subtotal/Factura), crecimiento interanual, rankings por región con <code>rank()</code>, metas (+10% UPT, +15% TKT) y porcentaje de cumplimiento. Cuenta días trabajados por vendedor.",
+            tags: ["Pandas", "Numpy", "Pivot Tables", "ETL"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Interfaz <strong>Streamlit</strong> con logo corporativo, botón de ejecución y spinner de progreso. Genera el reporte Excel <strong>en memoria (BytesIO)</strong> sin escribir en disco, disponible para descarga inmediata.",
+            tags: ["Streamlit", "BytesIO", "Reporte en Memoria"]
+          }
+        ]
+      },
+
+      "magnus": {
+        title: "Sistema ERP Magnus Parfum",
+        steps: [
+          {
+            title: "1. Base de Datos en la Nube",
+            desc: "Integración con <strong>Supabase</strong> (PostgreSQL cloud) mediante <code>st_supabase_connection</code>. Carga completa de 8 tablas: inventario, compras, ventas, créditos, inversionista, pagos de crédito, proveedores y configuración.",
+            tags: ["Supabase", "PostgreSQL", "Cloud DB"]
+          },
+          {
+            title: "2. Arquitectura Modular",
+            desc: "<strong>9 módulos de pestañas</strong> independientes: Inventario, Compras, Ventas, Créditos (fiados), Inversionista, Reportes, Proveedores, Caja/Banco y Configuración. Cada módulo tiene su propio archivo en <code>tabs/</code> y utilidades compartidas en <code>utils/</code>.",
+            tags: ["Modular", "CRUD", "Tabs", "Utilities"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Panel <strong>Streamlit</strong> con métricas en tiempo real: valor de inventario, saldo en caja/banco, cuentas por cobrar y número de clientes con deuda. Desplegado en <strong>Hugging Face Spaces</strong> con soporte de secretos para credenciales.",
+            tags: ["Streamlit", "Hugging Face", "Métricas en Vivo"]
+          }
+        ]
+      },
+
+      "presupuestobtb": {
+        title: "Consolidador de Presupuestos Multicanal",
+        steps: [
+          {
+            title: "1. Origen de Datos",
+            desc: "Consulta <strong>SQL Server</strong> para extraer mapeos comerciales: regiones B2B (Centro, Norte, Occidente, Oriente, Sur, Cadenas), códigos y nombres de vendedores destino. Alimenta selectores dinámicos en la interfaz web.",
+            tags: ["SQL Server", "pyodbc", "Mapeo Comercial"]
+          },
+          {
+            title: "2. Procesamiento Multicanal",
+            desc: "<strong>4 módulos independientes</strong> de generación: <code>presupuesto_b2b</code>, <code>presupuesto_b2c</code>, <code>presupuesto_online</code> y <code>presupuesto_inter</code>. Cada uno ejecuta su propia lógica de cálculo presupuestal y genera libros Excel complejos con hojas intercaladas.",
+            tags: ["B2B", "B2C", "Online", "Internacional"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "API REST con Flask que sirve <strong>4 endpoints POST</strong> de descarga directa de Excel. Incluye endpoints de <strong>persistencia</strong> para reasignar vendedores a zonas y eliminar registros desde la interfaz.",
+            tags: ["Flask API", "REST", "Excel", "CRUD"]
+          }
+        ]
+      },
+
+      "pronosticador": {
+        title: "Polla Mundialista & Sincronizador en Vivo",
+        steps: [
+          {
+            title: "1. Integración API Externa",
+            desc: "Conecta con <strong>TheSportsDB API</strong> para obtener partidos del día y resultados en vivo. El módulo <code>sync_api.py</code> transforma la respuesta JSON en registros para la base de datos SQLite local.",
+            tags: ["TheSportsDB", "REST API", "JSON", "SQLite"]
+          },
+          {
+            title: "2. Scheduler en Segundo Plano",
+            desc: "<strong>APScheduler</strong> ejecuta 2 jobs automáticos: un <strong>cron diario</strong> a las 6AM (traer partidos + cerrar vencidos) y un <strong>job de intervalo</strong> cada 15 minutos (sincronizar resultados y calcular puntajes). Se detiene limpiamente con <code>atexit</code>.",
+            tags: ["APScheduler", "Cron", "Background Tasks"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "Plataforma Flask con <strong>5 blueprints</strong>: autenticación (Bcrypt + Flask-Login), partidos, pronósticos, ranking y administración. Sistema de scoring que calcula puntos por aciertos exactos y parciales.",
+            tags: ["Flask", "Blueprints", "Flask-Login", "Bcrypt"]
+          }
+        ]
+      },
+
+      "reabastecimiento_online": {
+        title: "Optimizador de Reabastecimiento Online",
+        steps: [
+          {
+            title: "1. Preprocesamiento",
+            desc: "El módulo <code>A_preprocesamiento.py</code> consulta datos de ventas e inventarios por bodega desde el ERP. Calcula velocidades de venta, stock actual y cédulas de productos para la Tienda Online (POS).",
+            tags: ["SQL Server", "Pandas", "Preprocesamiento"]
+          },
+          {
+            title: "2. Pipeline de Redistribución",
+            desc: "Pipeline de <strong>4 etapas</strong> secuenciales: Preprocesamiento → Transferencias en Tránsito (<code>B_adicion_tras.py</code>) → Filtrado por tienda online → Redistribución con límites de stock (<code>C_Redist.py</code>). Cada etapa valida datos y maneja errores.",
+            tags: ["Pipeline ETL", "Logística", "4 Etapas"]
+          },
+          {
+            title: "3. Resultado",
+            desc: "API REST con Flask que ejecuta el proceso completo bajo demanda. Genera archivos Excel con <strong>auto-limpieza</strong> post-descarga (el archivo se borra del servidor al completarse). Respuestas JSON con conteo de registros procesados.",
+            tags: ["Flask API", "CORS", "Auto-limpieza", "Excel"]
+          }
+        ]
+      }
+    };
+
+    // ===================================================
+    // 3. FUNCIONES ENCARGADAS DEL MODAL
+    // ===================================================
+    function openArqModal(folderName) {
+      // Forzar que busque la clave en minúsculas por si el folder_name viene modificado
+      const data = arquitecturas[folderName.toLowerCase()];
+      if (!data) return;
+
+      // Inyectar título
+      document.getElementById('modal-title').textContent = data.title;
+
+      // Construir el body sin usar emojis, usando divisores y un diseño sobrio de lista
+      const body = document.getElementById('modal-body');
+      body.innerHTML = data.steps.map((step, i) => `
+        <div class="group/step relative rounded-xl border border-slate-800
+                    bg-slate-900/40 p-6
+                    hover:border-brand-500/30 hover:bg-slate-900/60
+                    transition-all duration-300"
+             style="animation: fadeUp 0.5s ease ${i * 0.12}s both">
+
+          <div class="flex items-start gap-4 mb-3">
+            <h4 class="text-base font-semibold text-brand-400 font-mono tracking-wider">${step.title}</h4>
+          </div>
+
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            ${step.desc}
+          </p>
+
+          <div class="flex flex-wrap gap-2">
+            ${step.tags.map(tag => `
+              <span class="px-2.5 py-0.5 rounded-md text-[10px] font-mono tracking-tight
+                           bg-slate-800 text-slate-300
+                           border border-slate-700/60">${tag}</span>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      // Mostrar modal con animación
+      const modal = document.getElementById('modal-arquitectura');
+      const content = document.getElementById('modal-content');
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+
+      // Bloquear scroll del body
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArqModal() {
+      const modal = document.getElementById('modal-arquitectura');
+      const content = document.getElementById('modal-content');
+
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+
+      // Restaurar scroll
+      document.body.style.overflow = '';
+    }
+
+    // Cerrar con tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeArqModal();
+    });
+  </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Entornos Virtuales locales (se vuelven muy pesados para Git)
+env/
+venv/
+.env/
+.venv/
+ENV/
+
+# Configuraciones de editores de código (VS Code / PyCharm)
+.vscode/
+.idea/
+
+# Archivos de datos o bases de datos locales por si acaso
+*.db
+*.sqlite3
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
