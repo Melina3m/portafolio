@@ -68,8 +68,34 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header>
-    <!-- Navegación principal -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/70 backdrop-blur-md border-b border-slate-900">
+    <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#inicio" class="text-xl font-black tracking-tight text-white group">
+        M<span class="text-brand-400 group-hover:text-accent-400 transition-colors duration-300">.</span>M
+      </a>
+
+      <nav class="hidden sm:flex items-center gap-8">
+        <a href="#inicio" class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">Inicio</a>
+        <a href="#sobre-mi" class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">Sobre Mí</a>
+        <a href="#proyectos"
+          class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">Proyectos</a>
+        <a href="#habilidades" class="text-sm font-semibold text-slate-400 hover:text-white transition-colors">Stack</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/573205507563?text=%C2%A1Hola%20Melina!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20que%20agendemos%20una%20llamada%20para%20hablar%20de%20un%20proyecto."
+          target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider
+                  text-slate-200 border border-slate-800 bg-slate-900/50 backdrop-blur-sm
+                  hover:border-accent-500/50 hover:text-white hover:bg-slate-900
+                  transition-all duration-300 flex items-center gap-2">
+          <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.864.001-2.641-1.03-5.124-2.904-6.999-1.874-1.874-4.36-2.903-7.002-2.904-5.443 0-9.867 4.414-9.87 9.865-.001 1.685.442 3.328 1.283 4.766l-.975 3.565 3.655-.958zm11.62-5.462c-.334-.168-1.979-.975-2.28-1.084-.303-.11-.523-.165-.744.165-.22.329-.85.11-.85.329 0 .11-.11.385-.11.494s-.334.22-.667.051c-2.4-.1.413-1.121-1.222-2.584-1.189-1.061-2.004-2.348-2.238-2.753-.233-.406-.025-.625.176-.824.182-.18.412-.45.618-.674.205-.225.273-.384.411-.641.137-.257.069-.484-.034-.694-.104-.21-.744-1.792-1.019-2.457-.269-.646-.543-.559-.744-.569l-.635-.01c-.22 0-.578.083-.88.413-.303.329-1.157 1.132-1.157 2.76 0 1.629 1.189 3.203 1.355 3.426.165.224 2.338 3.571 5.665 5.012 2.77 1.2 3.333.96 3.925.903.592-.057 1.914-.783 2.185-1.539.271-.756.271-1.404.19-1.539-.08-.135-.297-.22-.631-.388z" />
+          </svg>
+          Contacto
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -158,8 +184,92 @@
     </section>
 
     <!-- ===== ABOUT / SOBRE MÍ ===== -->
-    <section id="sobre-mi">
-      <!-- Información personal y profesional -->
+    <section id="sobre-mi" class="relative py-28 px-6 bg-slate-950 overflow-hidden">
+      <div class="absolute top-1/4 -left-10 w-72 h-72 rounded-full bg-brand-500/5 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-1/4 -right-10 w-72 h-72 rounded-full bg-accent-500/5 blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+        <div class="md:col-span-5 flex justify-center relative group">
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-brand-500 to-accent-500 rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 max-w-[280px] h-[340px] mx-auto">
+          </div>
+
+          <div
+            class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 p-2 max-w-[280px] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img src="{{ url_for('static', filename='Melina.jpg') }}" alt="Melina Muñoz"
+              class="w-full h-[320px] object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500" />
+            <div
+              class="absolute bottom-4 left-4 right-4 bg-slate-950/80 backdrop-blur-sm border border-slate-800 py-2 px-3 rounded-lg text-center">
+              <p class="text-xs font-mono text-accent-400">@Melina3m</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-6">
+          <p
+            class="inline-block px-4 py-1 rounded-full text-xs font-semibold tracking-widest uppercase bg-brand-500/10 text-brand-400 border border-brand-500/20">
+            Trayectoria y Enfoque
+          </p>
+
+          <h2 class="text-4xl font-black text-white leading-tight">
+            Ingeniera de Software enfocada en
+            <span class="bg-gradient-to-r from-brand-400 to-accent-400 bg-clip-text text-transparent">
+              Soluciones Reales
+            </span>
+          </h2>
+
+          <p class="text-slate-400 text-base leading-relaxed">
+            Soy graduada de la <strong class="text-slate-200 font-semibold">Institución Universitaria Digital de
+              Antioquia</strong>. Mi trayectoria profesional inició con un corto tiempo en la IU digital de Antioquia,
+            en la cual se me permitio conocer e implementra el desarrollo y en Vivell S.A.S, donde asumí el reto de
+            transformar
+            las necesidades de las áreas en sistemas web funcionales, automatizando flujos de datos complejos y
+            garantizando su correcto funcionamiento en servidores de producción locales.
+          </p>
+
+          <p class="text-slate-400 text-base leading-relaxed">
+            Me especializo en el desarrollo <strong class="text-slate-200 font-semibold">Fullstack (Python +
+              SQL)</strong> enfocado en backend y la automatización de procesos empresariales. Domino la creación de
+            lógica compleja como procedimientos almacenados y la integración con ERPs (Siesa), traduciendo necesidades
+            operativas en herramientas de software estables y ágiles.
+          </p>
+
+          <div class="pt-4 space-y-3">
+            <h4 class="text-xs font-mono tracking-wider uppercase text-slate-400">Capabilities destacadas:</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+              <div class="flex items-start gap-2 text-sm text-slate-300">
+                <span class="text-accent-400 mt-0.5">✔</span>
+                <span><strong>Despliegue On-Premise:</strong> Configuración de redes, manejo de Waitress WSGI y entornos
+                  automatizados.</span>
+              </div>
+
+              <div class="flex items-start gap-2 text-sm text-slate-300">
+                <span class="text-brand-400 mt-0.5">✔</span>
+                <span><strong>Lógica de Negocio Compleja:</strong> Modelado relacional y pipelines de datos
+                  eficientes.</span>
+              </div>
+
+              <div class="flex items-start gap-2 text-sm text-slate-300">
+                <span class="text-brand-400 mt-0.5">✔</span>
+                <span><strong>Frontend Funcional:</strong> Construcción de páneles interactivos a partir de
+                  requerimientos y mockups.</span>
+              </div>
+
+              <div class="flex items-start gap-2 text-sm text-slate-300">
+                <span class="text-accent-400 mt-0.5">✔</span>
+                <span><strong>Producción Comprobada:</strong> Sistemas robustos de conciliación y control logístico
+                  validados por usuarios reales.</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
     <!-- ===== PROJECTS / PROYECTOS ===== -->
@@ -325,7 +435,6 @@
                      hover:border-brand-500/50 hover:bg-slate-900/60
                      hover:shadow-lg hover:shadow-brand-500/5
                      transition-all duration-300">
-            <!-- Cabecera de tarjeta -->
             <div class="flex items-center gap-4 mb-6">
               <div class="inline-flex w-10 h-10 rounded-lg items-center justify-center
                             bg-brand-500/10 border border-brand-500/20 text-brand-400">
@@ -336,9 +445,7 @@
               <h3 class="text-lg font-bold text-white">Desarrollo Backend</h3>
             </div>
 
-            <!-- Tags / Habilidades -->
             <div class="flex flex-col gap-4">
-              <!-- Skill 1 -->
               <div>
                 <div class="flex justify-between text-xs mb-1.5">
                   <span class="text-slate-300 font-medium">Python</span>
@@ -351,7 +458,6 @@
                 </div>
               </div>
 
-              <!-- Skill 2 -->
               <div>
                 <div class="flex justify-between text-xs mb-1.5">
                   <span class="text-slate-300 font-medium">Flask</span>
@@ -364,7 +470,18 @@
                 </div>
               </div>
 
-              <!-- Skill 3 -->
+              <div>
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">PHP/Laravel</span>
+                  <span class="text-brand-400 font-semibold">Intermedio</span>
+                </div>
+                <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                  <div
+                    class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full transition-all duration-500"
+                    style="width: 75%"></div>
+                </div>
+              </div>
+
               <div>
                 <div class="flex justify-between text-xs mb-1.5">
                   <span class="text-slate-300 font-medium">Arquitectura de Software</span>
@@ -377,7 +494,6 @@
                 </div>
               </div>
 
-              <!-- Skill 4 -->
               <div>
                 <div class="flex justify-between text-xs mb-1.5">
                   <span class="text-slate-300 font-medium">REST APIs</span>
@@ -523,13 +639,11 @@
   <!-- ===== FOOTER / CONTACTO ===== -->
   <footer id="contacto"
     class="relative py-24 px-6 bg-gradient-to-b from-gray-950 via-slate-950 to-indigo-950 text-slate-300">
-    <!-- Línea divisoria superior -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-px
                   bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
 
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      <!-- Columna 1: Información y Redes -->
       <div class="space-y-6">
         <p class="inline-block px-4 py-1 rounded-full text-xs font-semibold
                      tracking-widest uppercase bg-brand-500/10 text-brand-400
@@ -549,7 +663,6 @@
         </p>
 
         <div class="space-y-4 pt-4">
-          <!-- Email -->
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-brand-500/10 text-brand-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -560,7 +673,6 @@
             <span class="text-sm text-slate-300 font-medium">mmmarin884@gmail.com</span>
           </div>
 
-          <!-- Ubicación -->
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-accent-500/10 text-accent-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -574,7 +686,6 @@
           </div>
         </div>
 
-        <!-- Redes Sociales -->
         <div class="flex gap-4 pt-6">
           <a href="https://github.com/Melina3m" target="_blank" rel="noopener noreferrer" title="Ver GitHub"
             class="w-10 h-10 rounded-lg border border-slate-800 bg-slate-900/60 flex items-center justify-center text-slate-400 hover:text-white hover:border-brand-500 transition-colors group">
@@ -587,41 +698,57 @@
         </div>
       </div>
 
-      <!-- Columna 2: Formulario -->
-      <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-8 backdrop-blur-sm">
-        <form id="form-contacto" class="space-y-5">
-          <div>
-            <label class="block text-sm font-medium text-slate-400 mb-2">Nombre Completo</label>
-            <input type="text" id="input-nombre" name="nombre" required
-              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
-              placeholder="Tu nombre..." />
+      <div class="relative group">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-accent-500/10 rounded-2xl blur-xl group-hover:from-brand-500/20 group-hover:to-accent-500/20 transition-all duration-500">
+        </div>
+
+        <div
+          class="relative bg-slate-900/50 border border-slate-800/80 rounded-2xl p-8 backdrop-blur-md text-center space-y-6 hover:border-slate-700/80 transition-all duration-300">
+
+          <div
+            class="flex items-center justify-center gap-2 mx-auto px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 w-fit">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-[11px] font-mono tracking-wider text-emerald-400 uppercase">Disponible para
+              proyectos</span>
           </div>
-          <div>
-            <label class="block text-sm font-medium text-slate-400 mb-2">Correo Electrónico</label>
-            <input type="email" id="input-email" name="email" required
-              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
-              placeholder="tu@correo.com" />
+
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-white tracking-tight">¿Prefieres una respuesta inmediata?</h3>
+            <p class="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">
+              Saltémonos los formularios de correo. Agenda una llamada o conversemos directamente a través de mi canal
+              de chat.
+            </p>
           </div>
-          <div>
-            <label class="block text-sm font-medium text-slate-400 mb-2">Mensaje</label>
-            <textarea id="input-mensaje" name="mensaje" rows="4" required
-              class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors resize-none"
-              placeholder="¿En qué proyecto o automatización estás pensando?"></textarea>
+
+          <div class="pt-2">
+            <a href="https://wa.me/573205507563?text=%C2%A1Hola%20Melina!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20que%20agendemos%20una%20llamada%20para%20conocer%20un%20poco%20de%20tu%20conocimiento%20"
+              target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 w-full bg-gradient-to-r from-brand-500 to-indigo-600 
+                      hover:from-brand-400 hover:to-indigo-500 text-white font-bold text-sm uppercase tracking-wider 
+                      py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 
+                      shadow-lg shadow-brand-500/20 hover:shadow-brand-500/30">
+
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              Iniciar Chat Directo
+            </a>
           </div>
-          <button type="submit"
-            class="w-full bg-gradient-to-r from-brand-500 to-indigo-600 hover:from-brand-600 hover:to-indigo-700 text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-brand-500/20">
-            Enviar Mensaje
-          </button>
-        </form>
+
+          <p class="text-[11px] font-mono text-slate-500">
+            Respuesta promedio: Menos de una hora
+          </p>
+          <!-- Copyright -->
+          <div class="mt-16 text-center text-xs text-slate-600">
+            &copy; 2026 Desarrolladora Fullstack. Todos los derechos reservados.
+          </div>
+        </div>
       </div>
 
     </div>
-
-    <!-- Copyright -->
-    <div class="mt-16 text-center text-xs text-slate-600">
-      &copy; 2026 Desarrolladora Fullstack. Todos los derechos reservados.
-    </div>
   </footer>
+
 
   <!-- Script de Interactividad API -->
   <script>
@@ -998,6 +1125,7 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeArqModal();
     });
+
   </script>
 
 </body>
